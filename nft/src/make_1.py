@@ -12,13 +12,13 @@ def replace_and_save(template_file, placeholder, count, start):
     for i in range(start, start + count):
         output_file = f"nft_{i}.json"
         
-        modified_template = json.loads(json.dumps(template).replace(placeholder, str(i)))
+        modified_template = json.loads(json.dumps(template).replace(placeholder, str(i - start + 1)))
 
         output_file = f"../meta/{output_file}"
         with open(output_file, 'w', encoding='utf-8') as file:
             json.dump(modified_template, file, ensure_ascii=False, indent=4)
 
-        print(f"file saved: {output_file}")
+        print(f"file saved: {output_file} and type {template_file} - {i - start + 1}")
 
 # Process
 replace_and_save('lottery-bronze.json', '{#?}', 25, 0)
