@@ -5,14 +5,14 @@
 
 import json
 
-def replace_and_save(template_file, placeholder, count, start):
+def replace_and_save(template_file, placeholder, count, start, start_internal = 0):
     with open(f"../meta/tmpl/{template_file}", 'r', encoding='utf-8') as file:
         template = json.load(file)
 
     for i in range(start, start + count):
         output_file = f"nft_{i}.json"
         
-        modified_template = json.loads(json.dumps(template).replace(placeholder, str(i - start + 1)))
+        modified_template = json.loads(json.dumps(template).replace(placeholder, str(i - start + 1 + start_internal)))
 
         output_file = f"../meta/{output_file}"
         with open(output_file, 'w', encoding='utf-8') as file:
@@ -30,4 +30,4 @@ def replace_and_save(template_file, placeholder, count, start):
 replace_and_save('lottery-gold_r2.json', '{#?}', 9, 50)
 replace_and_save('lottery-bronze_r2.json', '{#?}', 65, 50 + 9)
 replace_and_save('lottery-silver_r2.json', '{#?}', 25, 50 + 9 + 65)
-replace_and_save('lottery-golden_ticket.json', '{#?}', 1, 50 + 9 + 65 + 25)
+replace_and_save('lottery-golden_ticket.json', '{#?}', 1, 50 + 9 + 65 + 25, 1)
