@@ -27,6 +27,7 @@ def replace_and_save(template_file, placeholder, count, start):
 # replace_and_save('lottery-golden_ticket.json', '{#?}', 1, 25 + 15 + 9)
 
 # Rounde 2 ( 50+ )
-replace_and_save('lottery-silver_r2.json', '{#?}', 15, 50 + 25)
-replace_and_save('lottery-gold_r2.json', '{#?}', 9, 50 + 25 + 15)
-replace_and_save('lottery-golden_r2_ticket.json', '{#?}', 1, 50 + 25 + 15 + 9)
+replace_and_save('lottery-gold_r2.json', '{#?}', 9, 50)
+replace_and_save('lottery-bronze_r2.json', '{#?}', 65, 50 + 9)
+replace_and_save('lottery-silver_r2.json', '{#?}', 25, 50 + 9 + 65)
+replace_and_save('lottery-golden_ticket.json', '{#?}', 1, 50 + 9 + 65 + 25)
