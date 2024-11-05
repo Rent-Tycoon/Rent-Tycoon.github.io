@@ -1,0 +1,15 @@
+{
+    "name": "Lottery Bronze 16 (round 2)",
+    "description": "Luck loves you, you might have lost - you came third in the Rent Tycoon lottery Keep participating and you'll be a winner. This NFT, it gives you a pass to the Rent Tycoon grand finals.",
+    "attributes": [
+        {
+            "trait_type": "game",
+            "value": "Rent Tycoon"
+        },
+        {
+            "trait_type": "type",
+            "value": "bronze"
+        }
+    ],
+    "image": "https://rent-tycoon.github.io/nft/res/lottery-bronze-s1_r2.png"
+}

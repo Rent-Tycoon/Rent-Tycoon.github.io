@@ -1,0 +1,15 @@
+{
+    "name": "Lottery Gold 9 (round 2)",
+    "description": "You are a lottery winner, all the tops are yours. Don't lose the NFT it gives you a pass to the Rent Tycoon Grand Final",
+    "attributes": [
+        {
+            "trait_type": "game",
+            "value": "Rent Tycoon"
+        },
+        {
+            "trait_type": "type",
+            "value": "gold"
+        }
+    ],
+    "image": "https://rent-tycoon.github.io/nft/res/lottery-gold-s1_r2.png"
+}
