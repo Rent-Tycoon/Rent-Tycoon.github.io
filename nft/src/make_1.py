@@ -20,8 +20,13 @@ def replace_and_save(template_file, placeholder, count, start):
 
         print(f"file saved: {output_file} and type {template_file} - {i - start + 1}")
 
-# Process
-replace_and_save('lottery-bronze.json', '{#?}', 25, 0)
-replace_and_save('lottery-silver.json', '{#?}', 15, 25)
-replace_and_save('lottery-gold.json', '{#?}', 9, 25 + 15)
-replace_and_save('lottery-golden_ticket.json', '{#?}', 1, 25 + 15 + 9)
+# Rounde 1
+# replace_and_save('lottery-bronze.json', '{#?}', 25, 0)
+# replace_and_save('lottery-silver.json', '{#?}', 15, 25)
+# replace_and_save('lottery-gold.json', '{#?}', 9, 25 + 15)
+# replace_and_save('lottery-golden_ticket.json', '{#?}', 1, 25 + 15 + 9)
+
+# Rounde 2 ( 50+ )
+replace_and_save('lottery-silver_r2.json', '{#?}', 15, 50 + 25)
+replace_and_save('lottery-gold_r2.json', '{#?}', 9, 50 + 25 + 15)
+replace_and_save('lottery-golden_r2_ticket.json', '{#?}', 1, 50 + 25 + 15 + 9)
