@@ -1,0 +1,11 @@
+{
+    "name": "Early master 5",
+    "description": "Early Master is an exclusive collection of NFTs for the first Rent Tycoon players. These rare NFTs symbolize your contribution to the game and highlight your early master status. NFTs give +50000 to your Auto Tap abilities in Tap Coin. Each NFT is unique and limited in supply, representing a historical value for collectors",
+    "attributes": [
+        {
+            "trait_type": "game",
+            "value": "Rent Tycoon"
+        }
+    ],
+    "image": "https://rent-tycoon.github.io/nft/res2/early_master_nft.png"
+}
