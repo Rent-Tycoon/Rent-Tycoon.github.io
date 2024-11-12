@@ -3,31 +3,16 @@
 # lottery-gold.json - 9
 # lottery-golden_ticket.json - 1
 
-import json
-
-def replace_and_save(template_file, placeholder, count, start, start_internal = 0):
-    with open(f"../meta/tmpl/{template_file}", 'r', encoding='utf-8') as file:
-        template = json.load(file)
-
-    for i in range(start, start + count):
-        output_file = f"nft_{i}.json"
-        
-        modified_template = json.loads(json.dumps(template).replace(placeholder, str(i - start + 1 + start_internal)))
-
-        output_file = f"../meta/{output_file}"
-        with open(output_file, 'w', encoding='utf-8') as file:
-            json.dump(modified_template, file, ensure_ascii=False, indent=4)
-
-        print(f"file saved: {output_file} and type {template_file} - {i - start + 1}")
+from lib import meta_generate
 
 # Rounde 1
-# replace_and_save('lottery-bronze.json', '{#?}', 25, 0)
-# replace_and_save('lottery-silver.json', '{#?}', 15, 25)
-# replace_and_save('lottery-gold.json', '{#?}', 9, 25 + 15)
-# replace_and_save('lottery-golden_ticket.json', '{#?}', 1, 25 + 15 + 9)
+# meta_generate.replace_and_save('lottery-bronze.json', '{#?}', 25, 0)
+# meta_generate.replace_and_save('lottery-silver.json', '{#?}', 15, 25)
+# meta_generate.replace_and_save('lottery-gold.json', '{#?}', 9, 25 + 15)
+# meta_generate.replace_and_save('lottery-golden_ticket.json', '{#?}', 1, 25 + 15 + 9)
 
 # Rounde 2 ( 50+ )
-replace_and_save('lottery-gold_r2.json', '{#?}', 9, 50)
-replace_and_save('lottery-bronze_r2.json', '{#?}', 65, 50 + 9)
-replace_and_save('lottery-silver_r2.json', '{#?}', 25, 50 + 9 + 65)
-replace_and_save('lottery-golden_ticket.json', '{#?}', 1, 50 + 9 + 65 + 25, 1)
+meta_generate.replace_and_save('lottery-gold_r2.json', '{#?}', 9, 50)
+meta_generate.replace_and_save('lottery-bronze_r2.json', '{#?}', 65, 50 + 9)
+meta_generate.replace_and_save('lottery-silver_r2.json', '{#?}', 25, 50 + 9 + 65)
+meta_generate.replace_and_save('lottery-golden_ticket.json', '{#?}', 1, 50 + 9 + 65 + 25, 1)
