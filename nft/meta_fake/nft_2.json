@@ -1,0 +1,19 @@
+{
+    "name": "RNT_PRFT-#3_NFT (FAKE)",
+    "description": "This NFT is a work of art that certifies the right of its owner to exclusive ownership of this object. The owner of the NFT may later receive the right to exchange this NFT for real estate tokens when the conditions of such exchange are met.\nThis NFT is not a financial instrument, and the purchase of an NFT, in and of itself, cannot guarantee the receipt of income. \nThis NFT is issued as part of a strategic partnership between Rent Tycoon and Autentic. All additional terms and bonuses of NFT ownership can be found in the appendices to this release. NFT Description for RentTycoon - +5% to RENT token farming. NFT is effective only if stored in the wallet linked to the game. If the wallet has multiple NFTs, only one with the highest farming percentage is applied.  NFT Description for Autentic: 5% to profit in TON. NFT, is on the wallet used to purchase it. The NFT was on the owner's wallet at the time of the Snapshot.",
+    "attributes": [
+        {
+            "trait_type": "Game",
+            "value": "Rent Tycoon"
+        },
+        {
+            "trait_type": "Type",
+            "value": "FAKE"
+        },
+        {
+            "trait_type": "Purpose",
+            "value": "For internal tests and development"
+        }
+    ],
+    "image": "https://rent-tycoon.github.io/nft/res_fake/5profit-fake.jpg"
+}
