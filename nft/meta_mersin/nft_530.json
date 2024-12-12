@@ -1,0 +1,15 @@
+{
+    "name": "RNT_PRFT-#531_NFT",
+    "description": "This NFT is a work of art that certifies its owner's right to exclusive possession of the object. This NFT is eligible to participate in Airdrop at Rent Tycoon and Autentic.",
+    "attributes": [
+        {
+            "trait_type": "Game",
+            "value": "Rent Tycoon"
+        },
+        {
+            "trait_type": "Type",
+            "value": "RWA"
+        }
+    ],
+    "image": "https://rent-tycoon.github.io/nft/res/item-mersin-5.png"
+}
