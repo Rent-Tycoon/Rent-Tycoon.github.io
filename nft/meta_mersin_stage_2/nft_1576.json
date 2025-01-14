@@ -1,0 +1,39 @@
+{
+    "name": "Real Yield NFT #1577 (MVA)",
+    "description": "Real Yield MVA NFT: The first TON collection featuring Metaverse Asset to Real World Asset transformation. Premium Turkish property tokenization through Rent Tycoon game metaverse. Earn 6% APY in TON from rental income + airdrops starting Q1 2025.\n\nEach NFT is connected to virtual MVA twin of the tokenized real estate object. Limited supply: 2000 NFTs.\n\nPublic Github Pages metadata repository ensures transparent MVA-RWA transition. Join the future of asset tokenization!",
+    "attributes": [
+        {
+            "trait_type": "Game",
+            "value": "Rent Tycoon"
+        },
+        {
+            "trait_type": "Type",
+            "value": "RWA"
+        },
+        {
+            "trait_type": "Stage",
+            "value": "MVA"
+        },
+        {
+            "trait_type": "Nominal",
+            "value": "10 TON"
+        },
+        {
+            "trait_type": "Profit",
+            "value": "6%"
+        },
+        {
+            "trait_type": "SubType",
+            "value": "Apartment"
+        },
+        {
+            "trait_type": "Metaverce coordinates",
+            "value": "36.6840284,34.4390019"
+        },
+        {
+            "trait_type": "Metaverce address",
+            "value": "Turkey, Mersin, Deniz, Acıgöl Cd. No:71"
+        }
+    ],
+    "image": "https://rent-tycoon.github.io/nft/res/rt-mva-mersin-stage-2-test.png"
+}
